@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Banking Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Online Banking Simulation</h1>
+  </header>
+
+  <main>
+    <!-- Login Section -->
+    <section id="login-section">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Enter Username">
+      <input type="password" id="password" placeholder="Enter Password">
+      <button onclick="login()">Login</button>
+      <p id="login-message"></p>
+    </section>
+
+    <!-- Banking Dashboard -->
+    <section id="banking-dashboard" style="display: none;">
+      <h2>Welcome, <span id="user-name"></span></h2>
+      <p><strong>Account Balance:</strong> ₹<span id="balance">5000</span></p>
+
+      <div class="actions">
+        <h3>Deposit Money</h3>
+        <input type="number" id="deposit-amount" placeholder="Enter amount">
+        <button onclick="deposit()">Deposit</button>
+      </div>
+
+      <div class="actions">
+        <h3>Withdraw Money</h3>
+        <input type="number" id="withdraw-amount" placeholder="Enter amount">
+        <button onclick="withdraw()">Withdraw</button>
+      </div>
+
+      <button onclick="logout()">Logout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Online Banking Simulation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
